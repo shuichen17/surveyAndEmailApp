@@ -20,13 +20,6 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 
-
-
-//client ID: 799434814018-h4traegru99d3557he643vt1aoh9sp1e.apps.googleusercontent.com
-//client secret: CZyXmc4u7ZsGqEhxrT6MQ-Vj
-
-
-
 let port = process.env.PORT || 5000;
 app.listen(port, () => {
    console.log(`listening on port ${port}`);
